@@ -1,0 +1,108 @@
+# -----------------------------------------------------------------------------
+# terraform.tfvars.example
+#
+# Copy this file to terraform.tfvars (ignored by Git) and tweak the values
+# to match your domain. Values here are safe defaults for GitHub Pages.
+# -----------------------------------------------------------------------------
+
+# Cloudflare API token with Zone.DNS + Zone.Zone Settings permissions.
+# Tip: Instead of storing the token in this file, export it before running Terraform:
+# export CLOUDFLARE_API_TOKEN="cf_api_token_here"
+# cloudflare_api_token = "cf_api_token_here"
+
+# Root domain managed in Cloudflare.
+domain = "example.com"
+
+# DNS records are defined as a map. Update the content or add new entries as needed.
+dns_records = {
+  # GitHub Pages IPv4 (apex)
+  apex_a_1 = {
+    name    = "@"
+    type    = "A"
+    content = "185.199.108.153"
+    proxied = true
+  }
+  apex_a_2 = {
+    name    = "@"
+    type    = "A"
+    content = "185.199.109.153"
+    proxied = true
+  }
+  apex_a_3 = {
+    name    = "@"
+    type    = "A"
+    content = "185.199.110.153"
+    proxied = true
+  }
+  apex_a_4 = {
+    name    = "@"
+    type    = "A"
+    content = "185.199.111.153"
+    proxied = true
+  }
+
+  # GitHub Pages IPv6 (apex)
+  apex_aaaa_1 = {
+    name    = "@"
+    type    = "AAAA"
+    content = "2606:50c0:8000::153"
+    proxied = true
+  }
+  apex_aaaa_2 = {
+    name    = "@"
+    type    = "AAAA"
+    content = "2606:50c0:8001::153"
+    proxied = true
+  }
+  apex_aaaa_3 = {
+    name    = "@"
+    type    = "AAAA"
+    content = "2606:50c0:8002::153"
+    proxied = true
+  }
+  apex_aaaa_4 = {
+    name    = "@"
+    type    = "AAAA"
+    content = "2606:50c0:8003::153"
+    proxied = true
+  }
+
+  # www subdomain (CNAME to GitHub Pages)
+  www = {
+    name    = "www"
+    type    = "CNAME"
+    content = "yourusername.github.io"
+    proxied = true
+  }
+
+  # Optional: blog subdomain for Hashnode (comment out if you do not need it)
+  blog = {
+    name    = "blog"
+    type    = "CNAME"
+    content = "hashnode.network"
+    proxied = true
+  }
+}
+
+# Zone-level tweaks. Comment this block to use defaults from main.tf.
+zone_settings = {
+  always_use_https         = "on"
+  automatic_https_rewrites = "on"
+  min_tls_version          = "1.2"
+  tls_1_3                  = "on"
+  browser_check            = "on"
+  brotli                   = "on"
+  http3                    = "on"
+  zero_rtt                 = "on"
+  early_hints              = "on"
+  rocket_loader            = "off"
+  ssl                      = "strict"
+
+  security_header = {
+    enabled            = true
+    max_age            = 31536000
+    include_subdomains = true
+    preload            = false
+    nosniff            = true
+  }
+}

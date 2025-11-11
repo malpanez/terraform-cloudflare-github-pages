@@ -1,0 +1,21 @@
+# Replace with your own values and rename to terraform.tfvars.
+domain = "example.com"
+
+dns_records = {
+  apex_a_1 = { name = "@", type = "A", content = "185.199.108.153", proxied = true }
+  apex_a_2 = { name = "@", type = "A", content = "185.199.109.153", proxied = true }
+  apex_a_3 = { name = "@", type = "A", content = "185.199.110.153", proxied = true }
+  apex_a_4 = { name = "@", type = "A", content = "185.199.111.153", proxied = true }
+
+  apex_aaaa_1 = { name = "@", type = "AAAA", content = "2606:50c0:8000::153", proxied = true }
+  apex_aaaa_2 = { name = "@", type = "AAAA", content = "2606:50c0:8001::153", proxied = true }
+  apex_aaaa_3 = { name = "@", type = "AAAA", content = "2606:50c0:8002::153", proxied = true }
+  apex_aaaa_4 = { name = "@", type = "AAAA", content = "2606:50c0:8003::153", proxied = true }
+
+  www = {
+    name    = "www"
+    type    = "CNAME"
+    content = "yourusername.github.io"
+    proxied = true
+  }
+}

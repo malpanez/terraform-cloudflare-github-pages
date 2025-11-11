@@ -1,0 +1,61 @@
+# Replace with your values and rename to terraform.tfvars before applying.
+domain = "example.com"
+
+dns_records = {
+  apex_a_1 = { name = "@", type = "A", content = "185.199.108.153", proxied = true }
+  apex_a_2 = { name = "@", type = "A", content = "185.199.109.153", proxied = true }
+  apex_a_3 = { name = "@", type = "A", content = "185.199.110.153", proxied = true }
+  apex_a_4 = { name = "@", type = "A", content = "185.199.111.153", proxied = true }
+
+  apex_aaaa_1 = { name = "@", type = "AAAA", content = "2606:50c0:8000::153", proxied = true }
+  apex_aaaa_2 = { name = "@", type = "AAAA", content = "2606:50c0:8001::153", proxied = true }
+  apex_aaaa_3 = { name = "@", type = "AAAA", content = "2606:50c0:8002::153", proxied = true }
+  apex_aaaa_4 = { name = "@", type = "AAAA", content = "2606:50c0:8003::153", proxied = true }
+
+  www = {
+    name    = "www"
+    type    = "CNAME"
+    content = "yourusername.github.io"
+    proxied = true
+    comment = "Primary marketing site"
+  }
+
+  blog = {
+    name    = "blog"
+    type    = "CNAME"
+    content = "hashnode.network"
+    proxied = true
+    comment = "Developer blog hosted on Hashnode"
+  }
+
+  status = {
+    name    = "status"
+    type    = "A"
+    content = "203.0.113.10"
+    proxied = false
+    ttl     = 300
+    comment = "Statuspage served directly"
+  }
+}
+
+zone_settings = {
+  always_use_https         = "on"
+  automatic_https_rewrites = "on"
+  min_tls_version          = "1.3"
+  tls_1_3                  = "on"
+  browser_check            = "on"
+  brotli                   = "on"
+  http3                    = "on"
+  zero_rtt                 = "on"
+  early_hints              = "on"
+  rocket_loader            = "off"
+  ssl                      = "strict"
+
+  security_header = {
+    enabled            = true
+    max_age            = 63072000
+    include_subdomains = true
+    preload            = true
+    nosniff            = true
+  }
+}
