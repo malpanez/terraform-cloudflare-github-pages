@@ -252,7 +252,7 @@ This is the **FREE** version. Perfect for:
 | Advanced Rulesets | ❌ | ✅ Cache, redirects |
 | Email Support | ❌ | ✅ 30 days |
 
-**Want PRO?** [Join the waitlist →](https://homelabforge.dev/pro-waitlist) (launching soon)
+**Want PRO?** [Join the waitlist →](https://tally.so/r/eqqYzO) (launching soon)
 
 ### Why PRO?
 
