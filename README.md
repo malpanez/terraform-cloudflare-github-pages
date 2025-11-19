@@ -2,7 +2,7 @@
 
 > Stop clicking through Cloudflare's UI. Automate your static site infrastructure in 5 minutes.
 
-![GitHub Repo stars](https://img.shields.io/github/stars/homelabforge/cloudflare-terraform-github-pages?style=social)
+![GitHub Repo stars](https://img.shields.io/github/stars/malpanez/terraform-cloudflare-github-pages?style=social)
 ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
 ![Terraform >=1.3](https://img.shields.io/badge/Terraform-%3E%3D%201.3.0-623CE4?logo=terraform)
 
@@ -243,7 +243,7 @@ This is the **FREE** version. Perfect for:
 | DNSSEC | ✅ | ✅ |
 | Zone Settings | ✅ | ✅ |
 | Documentation | ✅ Good | ✅ Excellent |
-| DevContainer | ❌ | ✅ Pre-configured |
+| DevContainer | ✅ | ✅ Pre-configured |
 | GitHub Actions | ❌ | ✅ Auto-deploy |
 | Drift Detection | ❌ | ✅ Weekly checks |
 | Auto-Healing | ❌ | ✅ Self-fixing |
@@ -282,8 +282,8 @@ This is exactly what I use for homelabforge.dev.
 - [Advanced Setup](examples/advanced/) - Multiple subdomains
 
 **Blog Posts:**
-- [How I Automated My Blog Infrastructure](https://homelabforge.dev/blog/cloudflare-terraform-free)
-- [Terraform + Cloudflare Best Practices](https://homelabforge.dev/blog/terraform-cloudflare-guide)
+- [How I Automated My Blog Infrastructure](https://blog.homelabforge.dev/cloudflare-terraform-free)
+- [Terraform + Cloudflare Best Practices](https://blog.homelabforge.dev/terraform-cloudflare-guide)
 
 ## 🤝 Contributing
 
@@ -335,16 +335,16 @@ A: Local by default. Configure remote backend for production.
 ## 💬 Support
 
 **Free Support:**
-- [GitHub Issues](https://github.com/homelabforge/cloudflare-terraform-github-pages/issues) - Bug reports
-- [Discussions](https://github.com/homelabforge/cloudflare-terraform-github-pages/discussions) - Questions
+- [GitHub Issues](https://github.com/malpanez/terraform-cloudflare-github-pages/issues) - Bug reports
+- [Discussions](https://github.com/malpanez/terraform-cloudflare-github-pages/discussions) - Questions
 - [Examples](examples/) - Working code
 
 **Paid Support:**
 - PRO version includes 30-day email support
-- Custom setup available ([Contact](mailto:hello@homelabforge.dev))
+- Custom setup available ([Contact](mailto:miguel@homelabforge.dev))
 
 **Community:**
-- Follow [@homelabforge](https://twitter.com/homelabforge) for updates
+- Follow [@malpanez](https://twitter.com/malpanez) for updates
 - Join [Discord](https://homelabforge.dev/discord) (coming soon)
 
 ## 📄 License
@@ -353,7 +353,7 @@ MIT License - use freely for personal or commercial projects.
 
 ## 🙏 Credits
 
-Built by [Alejandro Flores](https://homelabforge.dev)
+Built by [Miguel Alpañez Alcalde](https://homelabforge.dev)
 
 **Resources:**
 - [Cloudflare Terraform Provider](https://registry.terraform.io/providers/cloudflare/cloudflare/latest/docs)
@@ -367,8 +367,8 @@ Built by [Alejandro Flores](https://homelabforge.dev)
 
 If this saved you time, please star the repo!
 
-[![Star History Chart](https://api.star-history.com/svg?repos=homelabforge/cloudflare-terraform-github-pages&type=Date)](https://star-history.com/#homelabforge/cloudflare-terraform-github-pages)
+[![Star History Chart](https://api.star-history.com/svg?repos=malpanez/terraform-cloudflare-github-pages&type=Date)](https://star-history.com/#homelabforge/cloudflare-terraform-github-pages)
 
 ---
 
-**Built with ☕ and automation** | [Blog](https://homelabforge.dev/blog) | [Newsletter](https://homelabforge.dev/newsletter) | [LinkedIn](https://www.linkedin.com/in/alejandro-flores-dev)
+**Built with ☕ and automation** | [Blog](https://blog.homelabforge.dev) | [Newsletter](https://homelabforge.dev/newsletter) | [LinkedIn](https://www.linkedin.com/in/miguel-alpa%C3%B1ez/)
