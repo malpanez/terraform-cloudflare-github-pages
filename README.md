@@ -88,8 +88,8 @@ I use this exact setup for [homelabforge.dev](https://homelabforge.dev):
 ### Step 1: Clone
 
 ```bash
-git clone https://github.com/homelabforge/cloudflare-terraform-github-pages.git
-cd cloudflare-terraform-github-pages
+git clone https://github.com/malpanez/terraform-cloudflare-github-pages.git
+cd terraform-cloudflare-github-pages
 ```
 
 ### Step 2: Configure
@@ -367,8 +367,7 @@ Built by [Miguel Alpañez Alcalde](https://homelabforge.dev)
 
 If this saved you time, please star the repo!
 
-[![Star History Chart](https://api.star-history.com/svg?repos=malpanez/terraform-cloudflare-github-pages&type=Date)](https://star-history.com/#homelabforge/cloudflare-terraform-github-pages)
-
+[![Star History Chart](https://api.star-history.com/svg?repos=malpanez/terraform-cloudflare-github-pages&type=Date)](https://star-history.com/#malpanez/terraform-cloudflare-github-pages)
 ---
 
-**Built with ☕ and automation** | [Blog](https://blog.homelabforge.dev) | [Newsletter](https://homelabforge.dev/newsletter) | [LinkedIn](https://www.linkedin.com/in/miguel-alpa%C3%B1ez/)
+**Built with ☕ and automation** | [Blog](https://blog.homelabforge.dev) | [Newsletter](https://tally.so/r/eqqYzO) | [LinkedIn](https://www.linkedin.com/in/miguel-alpa%C3%B1ez/)
