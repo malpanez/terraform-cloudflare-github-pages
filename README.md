@@ -345,7 +345,6 @@ A: Local by default. Configure remote backend for production.
 
 **Community:**
 - Follow [@malpanez](https://twitter.com/malpanez) for updates
-- Join [Discord](https://homelabforge.dev/discord) (coming soon)
 
 ## 📄 License
 
